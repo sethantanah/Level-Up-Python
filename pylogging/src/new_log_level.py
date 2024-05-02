@@ -10,8 +10,15 @@ class CustomLogger:
         if not method_name:
             method_name = level_name.lower()
 
-        if hasattr(logging, level_name) or hasattr(logging, method_name) or hasattr(logging.getLoggerClass(), method_name):
-            raise AttributeError("{} already defined in logging module".format(level_name if not hasattr(logging, level_name) else method_name))
+        if hasattr(logging, level_name) or \
+           hasattr(logging, method_name) or \
+           hasattr(logging.getLoggerClass(), method_name):
+            raise AttributeError(
+                "{} already defined in logging module".format(
+                    level_name if not hasattr(logging, level_name)
+                    else method_name
+                )
+            )
 
         def log_for_level(self, message, *args, **kwargs):
             if self.isEnabledFor(level_num):

@@ -7,4 +7,3 @@ if __name__ == "__main__":
     logging.warning("A warning message")
     logging.error("An error message")
     logging.critical("A critical message")
-
