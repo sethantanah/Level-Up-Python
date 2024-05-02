@@ -1,0 +1,19 @@
+[tool.poetry]
+package-mode = false
+name = "pylogging"
+version = "0.1.0"
+description = ""
+authors = ["sethantanah <sethsyd32@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorlog = "^6.8.2"
+python-json-logger = "^2.0.7"
+
+[tool.poetry.scripts]
+my-script = "src:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

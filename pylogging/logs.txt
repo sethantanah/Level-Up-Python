@@ -1,0 +1,2 @@
+{"name": "__main__", "filename": "logging_to_a_file.py", "lineno": 28, "process": 14564, "message": "A debug message", "taskName": null, "severity": "DEBUG", "timestamp": "2024-05-02T20:49:51Z"}
+{"name": "__main__", "filename": "logging_to_a_file.py", "lineno": 29, "process": 14564, "message": "An error message", "taskName": null, "severity": "ERROR", "timestamp": "2024-05-02T20:49:51Z"}
